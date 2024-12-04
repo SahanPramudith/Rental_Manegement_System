@@ -25,7 +25,7 @@ public class CustomerController {
     List<Customer>getAllCustomer(){
         return service.getCustomer();
     }
-    @GetMapping("/searchid")
+    @GetMapping("/searchid/{id}")
     List<Customer>getAllCustomer(@PathVariable Integer id){
         return service.searchById(id);
     }

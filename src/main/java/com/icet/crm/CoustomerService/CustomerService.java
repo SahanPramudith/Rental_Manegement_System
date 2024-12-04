@@ -11,5 +11,5 @@ public interface CustomerService {
 
     List<Customer> searchById(Integer id);
 
-    List<Customer> searchById(String id);
+
 }
