@@ -17,8 +17,16 @@ public class CustomerController {
     void save(@RequestBody Customer customer){
         service.saveCoustomer(customer);
     }
+    @PutMapping("/updateCustomer")
+    void update(@RequestBody Customer customer){
+        service.saveCoustomer(customer);
+    }
     @GetMapping("/getCustomer")
     List<Customer>getAllCustomer(){
         return service.getCustomer();
+    }
+    @GetMapping("/searchid")
+    List<Customer>getAllCustomer(@PathVariable Integer id){
+        return service.searchById(id);
     }
 }

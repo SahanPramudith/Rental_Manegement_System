@@ -34,4 +34,19 @@ public class CustomerServiceImpl implements CustomerService {
 
         return getCustomerAll;
     }
+
+    @Override
+    public List<Customer> searchById(Integer id) {
+        return List.of();
+    }
+
+    @Override
+    public List<Customer> searchById(String id) {
+        ArrayList<Customer> searchId = new ArrayList<>();
+        for (CustomerEntity customerEntity : repository.findAllByid(id)) {
+            searchId.add(mapper.map(customerEntity, Customer.class));
+        }
+
+        return searchId;
+    }
 }
