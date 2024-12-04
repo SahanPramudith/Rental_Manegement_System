@@ -1,6 +1,6 @@
-package com.icet.crm.CoustomerService.IMpl;
+package com.icet.crm.Service.IMpl;
 
-import com.icet.crm.CoustomerService.CustomerService;
+import com.icet.crm.Service.CustomerService;
 import com.icet.crm.Entity.CustomerEntity;
 import com.icet.crm.Model.Customer;
 import com.icet.crm.Repository.CustomerRepository;

@@ -1,6 +1,6 @@
-package com.icet.crm.CoustomerController;
+package com.icet.crm.Controller;
 
-import com.icet.crm.CoustomerService.CustomerService;
+import com.icet.crm.Service.CustomerService;
 import com.icet.crm.Model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
+@RequestMapping("/customer")
 public class CustomerController {
     @Autowired
     CustomerService service;
