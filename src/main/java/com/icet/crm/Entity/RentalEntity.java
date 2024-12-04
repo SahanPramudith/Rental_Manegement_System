@@ -1,11 +1,16 @@
-package com.icet.crm.Model;
+package com.icet.crm.Entity;
 
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
-
+@Entity
 @Data
-public class Rental {
+@Table(name = "Rental")
+public class RentalEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private LocalDate rentaldate;
     private LocalDate returndate;
