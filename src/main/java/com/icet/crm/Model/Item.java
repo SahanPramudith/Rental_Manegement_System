@@ -9,7 +9,6 @@ public class Item {
     private Integer id;
     private String name;
     private String avalability;
-    private String city;
-    private LocalDateTime pentalperday;
     private LocalDateTime fineperday;
+    private LocalDateTime pentalperday;
 }

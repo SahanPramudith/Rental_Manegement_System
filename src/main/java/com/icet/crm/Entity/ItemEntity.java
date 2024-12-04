@@ -17,6 +17,6 @@ public class ItemEntity {
     private Integer id;
     private String name;
     private String avalability;
-    private LocalDateTime pentalperday;
     private LocalDateTime fineperday;
+    private LocalDateTime pentalperday;
 }
